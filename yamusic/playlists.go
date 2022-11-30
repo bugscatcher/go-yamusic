@@ -114,6 +114,10 @@ type (
 		Type             string `json:"type"`
 		RememberPosition bool   `json:"rememberPosition"`
 		TrackSharingFlag string `json:"trackSharingFlag"`
+		Normalization    struct {
+			Gain float64 `json:"gain"`
+			Peak int     `json:"peak"`
+		} `json:"normalization"`		
 	}
 
 	TrackFull struct {
